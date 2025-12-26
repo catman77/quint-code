@@ -2,9 +2,10 @@
 
 **Structured reasoning for AI coding tools** — make better decisions, remember why you made them.
 
-**Supports:** Claude Code, Cursor, Gemini CLI, Codex CLI
+**Supports:** Claude Code, Cursor, Gemini CLI, Codex CLI, GitHub Copilot
 
 > **Works exceptionally well with Claude Code!**
+> **Native support for GitHub Copilot in VS Code!**
 
 ## What Quint Does
 
@@ -45,6 +46,13 @@ This creates:
 - `.mcp.json` — MCP server configuration
 - `~/.claude/commands/` — slash commands (global by default)
 
+**Quick Setup for Quint Code Contributors:**
+```bash
+cd /path/to/quint-code
+quint-code init --copilot  # Automatic GitHub Copilot setup!
+```
+This creates `.vscode/settings.json`, `.vscode/extensions.json`, and `.github/copilot-instructions.md`.
+
 **Flags:**
 
 | Flag | MCP Config | Commands |
@@ -53,6 +61,7 @@ This creates:
 | `--cursor` | `.cursor/mcp.json` | `~/.cursor/commands/*.md` |
 | `--gemini` | `~/.gemini/settings.json` | `~/.gemini/commands/*.toml` |
 | `--codex` | `~/.codex/config.toml`* | `~/.codex/prompts/*.md` |
+| `--copilot` | `.vscode/settings.json` + `.github/copilot-instructions.md` | — |
 | `--all` | All of the above | All of the above |
 | `--local` | — | Commands in project dir instead of global |
 
@@ -72,6 +81,8 @@ But really, it would be better to hack into it straight away and feel the flow. 
 ### Recommended: Add FPF Context to Your Agent Rules
 
 For best results, we highly recommend using the [`CLAUDE.md`](CLAUDE.md) from this repository as a reference for your own project's agent instructions. It's optimized for software engineering work with FPF.
+
+**For GitHub Copilot users:** The `.github/copilot-instructions.md` file is automatically created when you run `quint-code init --copilot`. This provides GitHub Copilot with context about FPF concepts, project structure, and best practices.
 
 At minimum, copy the **FPF Glossary** section to your:
 - `CLAUDE.md` (Claude Code)
@@ -117,6 +128,7 @@ See [docs/fpf-engine.md](docs/fpf-engine.md) for the full breakdown.
 - [Quick Reference](docs/fpf-engine.md) — Commands and workflow
 - [Advanced: FPF Deep Dive](docs/advanced.md) — Theory, glossary, tuning
 - [Architecture](docs/architecture.md) — How it works under the hood
+- [GitHub Copilot Guide](docs/github-copilot.md) — Using Quint Code with GitHub Copilot in VS Code
 
 ## License
 

@@ -1,0 +1,48 @@
+{
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true
+    },
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "other": "on",
+            "strings": "on"
+        },
+        "editor.wordWrap": "on"
+    },
+    "files.associations": {
+        "*.md": "markdown",
+        ".mcp.json": "jsonc"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.quint/quint.db*": true
+    },
+    "github.copilot.chat.useInstructionFiles": true,
+    "github.copilot.enable": {
+        "*": true,
+        "go": true,
+        "markdown": true,
+        "yaml": true
+    },
+    "go.lintOnSave": "workspace",
+    "go.lintTool": "golangci-lint",
+    "go.useLanguageServer": true,
+    "mcp.servers": {
+        "quint-code": {
+            "args": [
+                "serve"
+            ],
+            "command": "/usr/local/bin/quint-code",
+            "env": {
+                "QUINT_PROJECT_ROOT": "/home/catman/Yandex.Disk/cuckoo/z/reals/libs/Experiments/Space/quint-code"
+            }
+        }
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": []
+}

@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "github.copilot",
+        "github.copilot-chat",
+        "golang.go",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-sqlite",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "redhat.vscode-yaml",
+        "tamasfe.even-better-toml",
+        "eamodio.gitlens"
+    ],
+    "unwantedRecommendations": []
+}
